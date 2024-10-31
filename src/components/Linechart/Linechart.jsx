@@ -9,12 +9,12 @@ const Linechart = () => {
         {id:6, name:'Dabil', phy:36, math: 33},
         {id:7, name:'Sabil', phy:70, math: 89},
         {id:8, name:'nabil', phy:50, math: 69},
-        {id:9, name:'Habib', phy:33, math: 32}
+        {id:9, name:'Habib', phy:35, math: 32}
     ]
     return (
         <div>
             <LineChart width={480} height={480} data={MathMarksData}>
-                <Line dataKey="math"></Line>
+                <Line dataKey="math" stroke='brown'></Line>
                 <Line dataKey="phy"></Line>
             </LineChart>
         </div>
